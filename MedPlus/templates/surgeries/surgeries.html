@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/Home Page Images/title logo/favicon.webp"  type = "image/x-icon">
+    <title>
+      Practo Care Surgeries - You are in Safe Hands
+    </title>
+    <link rel="stylesheet" href="{% static 'surgeries/surgeries.css' %}">
+   <link  rel="stylesheet" href="{% static 'surgeries/slick-theme.css' %}">
+   <link  rel="stylesheet" href="{% static 'surgeries/slick.css' %}">
+  </head>
+  <body>
+
+
+     <!-- Nav bhar started  -->
+
+     <div id="NavBar">
+      <!-- Nav have four section -->
+      <div class="NavFirstSection">
+         <a href="/Home.html"><img src="../PractoImg/practonav logo/practo.svg" alt="" /></a> 
+      </div>
+      <div class="NavSecondSection">
+          <a href="../find doctor/practo find doctor page/find doctor.html"><div class="second1Text">
+              <h4>Find Doctors</h4>
+              <p>Book an appointment</p>
+          </div></a>
+          <a href="../VideoConsult/VideoConsult.html"><div class="second2Text">
+              <h4>Video Consult</h4>
+              <p>Consult top doctors</p>
+          </div></a>
+          <a href="../Medicines/Medicine.html"><div class="second3Text">
+              <h4>Medicines</h4>
+              <p>Practo pharmacy</p>
+          </div></a>
+          <a href="../labtests/Labtests.html"><div class="second4Text">
+              <h4>Lab Tests</h4>
+              <p>Book tests & checkup</p>
+          </div></a>
+          <a href="../Surgeries/surgeries.html"><div class="second5Text" id="blue_border">
+              <h4>Surgeries</h4>
+              <p>Expert surgical care</p>
+          </div></a>
+      </div>
+      <div class="NavThirdSection">
+         <ul>
+             <li id="forProvider" onclick="menuClick()">For Providers
+              <i class="fas fa-angle-down"></i>
+                  <div id="forProvidersmanu" class="samenav2">
+                      <ul>
+                         <a href="#"><li id="newtext">Practo Prime <span id="new">New</span></li></a> 
+                         <a href="#"> <li>Software for providers</li></a>
+                         <a href="../find doctor/practo find doctor page/doctor profile/doctor profile.html"><li>List your practice for Free</li></a> 
+                         <a href="#"><li>Corporate wellness</li></a> 
+                      </ul>
+                  </div>
+             </li>
+             <li id="SecurityHelpNav">Security Help   <i class="fas fa-angle-down"></i>
+              <div id="Securitysmanu" class="samenav2">
+                  <ul>
+                      <a href=""><li id="newtext">Data Security</li></a>
+                     <a href=""><li>Help</li></a> 
+                  </ul>
+              </div>
+            
+             </li>
+          </ul>
+      </div>
+      <div class="NavFourSection">
+          <div class="loginSignUp" id="loginbutton">
+              <a href="../login/login.html"><Button>Login / SignUp</Button></a>
+          </div>
+      </div>
+  </div>
+      <!-- Nav bhar end  -->
+    
+    <!-- main container having id = aap  -->
+    <div id="app">
+      <div class="care-app">                           <!-- div for main container -->
+         <div class="dweb-header mweb-hide">           <!--div for blue part  -->
+          <div class="blueContainerWrapper">           <!-- wrapper for blue container -->
+             <div class="left-section">                <!--left section of blue container -->
+              <div class="practo-care">
+                <img
+                  src="surgeriesImages/practoLogo.jpg"
+                  alt="Practo care"
+                />
+              </div>
+              <div class="info">
+                <p class="heading">Experts in end to end surgical care</p>
+                <hr class="separator" />
+                <p class="subheading">
+                  We bring expertise, care and technology together to give you
+                  end-to-end surgical solutions for 50+ ailments
+                </p>
+              </div>
+              <div class="call-cta">Call 0804-568-6920</div>
+            </div>
+            <div class="right-section">
+              <img height="750px" width="650px"
+                src="surgeriesImages/rahulDravid.jpg"
+                alt=""
+              />
+              <div class="remarks">
+                <div class="row-1">You are in safe hands</div>
+                <div class="row-2">- Rahul Dravid</div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        <!-- portion bellow blue part  -->
+       
+        <div class="dweb-body">
+            <div class="dweb-left-section">
+              <div class="c-value-section">
+                <div>
+                  <div class="itemIcon">
+                   
+                      <img
+                      class="c-value-section__item__icon"
+                        alt="doctor"
+                        src="surgeriesImages/ic_doctor_icon1.jpg"
+                        height="20px"
+                        width="20px"
+                      />
+                   
+                    <span class="itemtext"
+                      >Expert surgeons with 10+ years of experience</span
+                    >
+                  </div>
+                  <div class="itemIcon">
+                   
+                      <img
+                      class="c-value-section__item__icon"
+                        alt="treatment"
+                        src="surgeriesImages/ic_certificate_icon2.jpg"
+                        height="20px"
+                        width="20px"
+                      />
+                   
+                    <span class="itemtext"
+                      >Advanced Surgical Technologies</span
+                    >
+                  </div>
+                  <div class="itemIcon">
+                   
+                      <img
+                      class="c-value-section__item__icon"
+                        alt="personal care"
+                        src="surgeriesImages/ic_shake+hand_icon3.webp"
+                        height="20px"
+                        width="20px"
+                      />
+                   
+                    <span class="itemtext"
+                      >Personal Care Assistants</span
+                    >
+                  </div>
+                  <div class="itemIcon">
+                    
+                    <img
+                    class="c-value-section__item__icon"
+                    alt="treatment"
+                    src="surgeriesImages/rupii_icon.jpg"
+                    height="20px"
+                    width="20px"
+                  />
+                     
+                   <!-- <i class="c-value-section__item__icon">₹</i> -->
+                    <span class="itemtext"
+                      > Financial Aid Assistance</span
+                    >
+                  </div>
+                 
+                  <div class="itemIcon">
+                    
+                      <img
+                      class="c-value-section__item__icon"
+                        alt="care"
+                        src="surgeriesImages/ic_care_icon4.jpg"
+                        height="20px"
+                        width="20px"
+                      />
+                   
+                    <span class="itemtext"
+                      >High quality, affordable surgical procedures</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+               <!-- 1st separator  -->
+           
+            <div class="seperatorO"></div>
+
+      <!-- specification part(trust)  -->
+
+      <div class="c-trust-section">
+        <div class="c-trust-banner">
+           
+          <div class="c-trust-banner__item">
+            
+            <h2>200+</h2>
+            <small>Surgeons</small>
+          </div>
+          <div class="c-trust-banner__item--border">
+            <h2>30+</h2>
+            <small>Clinics</small>
+          </div>
+          <div class="c-trust-banner__item--border">
+            <h2>50+</h2>
+            <small>Procedures</small>
+          </div>
+        </div>
+        <div class="c-location-banner">
+            <img height="35px" width="43px" src="surgeriesImages/clinicLogo.jpg">
+          <div class="LazyLoad"></div>
+          <div class="c-location-banner__details">
+            <div class="c-location-banner__heading">
+              <span>7+</span><small>Locations</small>
+            </div>
+            <div class="c-location-banner__locations">
+              <span>BANGALORE</span><span>: MUMBAI</span><span>: DELHI</span
+              ><span>: 4+ CITIES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- round image part  -->
+
+           
+      <div class="seperatorO"></div>
+      
+      <section class="round_img_section">
+        <div class="providedSurgeries">
+         <h2>Surgeries we provide</h2>  
+        </div>
+        <div class="General_Surgery_title">
+              <div class="General_Surgery"> 
+                <img
+                  alt="General Surgery"
+                  src="surgeriesImages/general-surgery.jpg"
+                  height="42px"
+                  width="42px"
+                  class="margin--right--16"
+                />
+              </div>
+              <div class="title">General Surgery </div>
+            </div>
+              <div>
+               
+                <button type="button" class="collapsible">10<i class="arrow down"></i></button>
+                <div class="Collapsible">
+            <div id="roundImagesection">
+             
+                <div class="roundImage">
+                <a
+                class="roundImageA"
+                href="#"
+                ><div>
+                  <img
+                    alt="Piles"
+                    class="margin--bottom--10"
+                    height="64px"
+                    width="64px"
+                    src="surgeriesImages/piles.jpg"
+                  />
+                  <div>Piles</div>
+                </div></a
+              >
+            </div>
+              <div class="roundImage">
+              <a
+                class="roundImageA"
+                href="#"
+                ><div>
+                  <img
+                    alt="Hernia"
+                    class="margin--bottom--10"
+                    height="64px"
+                    width="64px"
+                    src="surgeriesImages/hernia.jpg"
+                  />
+                  <div>Hernia</div>
+                </div></a
+              >
+            </div>
+              <div class="roundImage">
+              <a
+                class="roundImageA"
+                href="#"
+                ><div>
+                  <img
+                    alt="Anal Fissure"
+                    class="margin--bottom--10"
+                    height="64px"
+                    width="64px"
+                    src="surgeriesImages/anal-fissure.jpg"
+                  />
+                  <div>Anal Fissure</div>
+                </div></a
+              >
+            </div>
+              <div class="roundImage">
+              <a
+                class="roundImageA"
+                href="#"
+                ><div>
+                  <img
+                    alt="Gall stones"
+                    class="margin--bottom--10"
+                    height="64px"
+                    width="64px"
+                    src="surgeriesImages/gall-stones.jpg"
+                  />
+                  <div>Gall stones</div>
+                </div></a
+              >
+            </div>
+              <div class="roundImage">
+              <a
+                class="roundImageA"
+                href="#"
+                ><div>
+                  <img
+                    alt="Circumcision"
+                    class="margin--bottom--10"
+                    height="64px"
+                    width="64px"
+                    src="surgeriesImages/circumcision.jpg"
+                  />
+                  <div>Circumcision</div>
+                </div></a
+              >
+            </div>
+              <div class="roundImage">
+              <a
+                class="roundImageA"
+                href="#"
+                ><div>
+                  <img
+                    alt="Kidney Stones"
+                    class="margin--bottom--10"
+                    height="64px"
+                    width="64px"
+                    src="surgeriesImages/kidney-stone.jpg"
+                  />
+                  <div>Kidney Stones</div>
+                </div></a
+              >
+            </div>
+              <div class="roundImage">
+              <a
+                class="roundImageA"
+                href="#"
+                ><div>
+                  <img
+                    alt="Varicose Veins"
+                    class="margin--bottom--10"
+                    height="64px"
+                    width="64px"
+                    src="surgeriesImages/varicose-veins.jpg"
+                  />
+                  <div>Varicose Veins</div>
+                </div></a
+              >
+            </div>
+              <div class="roundImage">
+              <a
+                class="roundImageA"
+                href="#"
+                ><div>
+                  <img
+                    alt="Appendicitis"
+                    class="margin--bottom--10"
+                    height="64px"
+                    width="64px"
+                    src="surgeriesImages/appendicitis.jpg"
+                  />
+                  <div>Appendicitis</div>
+                </div></a
+              >
+            </div>
+              <div class="roundImage">
+              <a
+                class="roundImageA"
+                href="#"
+                ><div>
+                  <img
+                    alt="Lipoma Removal"
+                    class="margin--bottom--10"
+                    height="64px"
+                    width="64px"
+                    src="surgeriesImages/lipoma-removal.jpg"
+                  />
+                  <div>Lipoma Removal</div>
+                </div></a
+              >
+            </div>
+              <div class="roundImage">
+                  <a
+                  class="roundImageA"
+                href="#"
+                ><div>
+                  <img
+                    alt="Pilonidal Sinus"
+                    class="margin--bottom--10"
+                    height="64px"
+                    width="64px"
+                    src="surgeriesImages/pilonidal-sinus.jpg"
+                  />
+                  <div>Pilonidal Sinus</div>
+                </div></a
+              >
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="seperatorO"></div>
+        
+       
+        <!-- why practo ? section  -->
+
+        <div id="whyPractoSection">
+          
+            <div>
+              <div class="c-header margin--bottom--20"><h2>Why Practo Care ?</h2></div>
+            </div>
+            <div>
+              <div class="c-value-description-item">
+                <div class="c-value-description-item__header">
+                  <div
+                    class="whyPracto_icon"
+                      
+                  >
+                    <img
+                      alt="doctor"
+                      src="surgeriesImages/ic_doctor_icon1.jpg"
+                      height="20px"
+                      width="20px"
+                    />
+                  </div>
+                  <div class="c-value-description-item__header__text">
+                   <h3>Expert surgeons</h3> 
+                  </div>
+                </div>
+                <div class="c-value-description-item__content">
+                  We have the finest and some of the most qualified surgical
+                  specialists, each with 10+ years of experience, who will
+                  consult with you to determine and conduct the most
+                  appropriate surgical procedure for your condition.
+                </div>
+                
+              </div>
+              <div class="c-value-description-item">
+                <div class="c-value-description-item__header">
+                  <div
+                    class="whyPracto_icon"
+                  >
+                    <img
+                      alt="treatment"
+                      src="surgeriesImages/ic_certificate_icon2.jpg"
+                      height="20px"
+                      width="20px"
+                    />
+                  </div>
+                  <div class="c-value-description-item__header__text">
+                    <h3>Advanced Surgical Technologies</h3>
+                  </div>
+                </div>
+                <div class="c-value-description-item__content">
+                  You can expect the highest standards in surgeries and care
+                  with our cutting-edge modern medical technology, designed to
+                  provide you the most advanced level of medical care.
+                </div>
+                
+              </div>
+              <div class="c-value-description-item">
+                <div class="c-value-description-item__header">
+                  <div
+                    class="whyPracto_icon"
+                  >
+                    <img
+                      alt="personal care"
+                      src="surgeriesImages/ic_shake+hand_icon3.webp"
+                      height="20px"
+                      width="20px"
+                    />
+                  </div>
+                  <div class="c-value-description-item__header__text">
+                   <h3>Personal Care Assistants</h3> 
+                  </div>
+                </div>
+                <div class="c-value-description-item__content">
+                  A dedicated assistant will take care of your needs from your
+                  very first interaction with us through to the end of your
+                  treatment. They will be with you at every step of your
+                  journey—booking consultations with surgeons, getting a
+                  second opinion, finding the best hospital for your surgery,
+                  arranging medicines and lab tests, handling the insurance
+                  approvals, and coordinating admission and discharge
+                  formalities.
+                </div>
+                
+              </div>
+              <div class="c-value-description-item">
+                <div class="c-value-description-item__header">
+                  <div
+                    class="whyPracto_icon"
+                  >
+                  <img
+                      alt="treatment"
+                      src="surgeriesImages/rupii_icon.jpg"
+                      height="20px"
+                      width="20px"
+                    />
+                  </div>
+                  <div class="c-value-description-item__header__text">
+                   <h3>Financial aid and assistance</h3> 
+                  </div>
+                </div>
+                <div class="c-value-description-item__content">
+                  We provide our customers with the highest level of
+                  satisfaction by ensuring 100% transparency in pricing. We
+                  offer the finest surgical experiences at competitive
+                  prices—with flexible payment options, no-cost EMI options,
+                  discounted medicines and lab tests, and support for a wide
+                  range of insurance policies.
+                </div>
+                
+              </div>
+              <div class="c-value-description-item">
+                <div class="c-value-description-item__header">
+                  <div
+                    class="whyPracto_icon"
+                  >
+                    <img
+                      alt="care"
+                      src="surgeriesImages/ic_care_icon4.jpg"
+                      height="20px"
+                      width="20px"
+                    />
+                  </div>
+                  <div class="c-value-description-item__header__text">
+                   <h3>Postoperative Care</h3> 
+                  </div>
+                </div>
+                <div class="c-value-description-item__content">
+                  Our personal care assistants will continue to stay in touch
+                  with you, even after the procedure, to book free followup
+                  consultations with your doctor as per your convenience. You
+                  will also receive dietary tips and instructions for your
+                  speedy recovery.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+       
+        <div class="dweb-right-section">
+        
+          <div class="c-form-section">
+            <div class="c-form-header">
+              <div class="u-width-per--60">
+                <div class="u-text--bold text-beta">
+                  Let’s schedule your appointment
+                </div>
+                <div class="appointment_image">
+                  <img height="99" width="86" src="surgeriesImages/appointment.jpg">
+                </div>
+              </div>
+              
+            </div>
+            <div class="c-form-section__content">
+              <div class="c-book-form__items">
+               
+                  <div
+                    class="c-input__container"
+                    role="presentation"
+                    tabindex="0"
+                  >
+                    <div class="c-input__info--hide">Name*</div>
+                    <input
+                      type="text"
+                      class="c-input"
+                      name="name"
+                      placeholder="Name*"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div class="c-book-form__items">
+                  <div
+                    class="c-input__container"
+                    role="presentation"
+                    tabindex="0"
+                  >
+                    <div class="c-input__info--hide">Phone Number*</div>
+                    <input
+                      type="text"
+                      class="c-input"
+                      name="phone"
+                      placeholder="Phone Number*"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div class="c-book-form__items">
+                  <div
+                    class="c-input__container"
+                    role="presentation"
+                    tabindex="0"
+                  >
+                  
+                    <div class="c-input__info--hide">Location*</div>
+                    <input
+                      type="text"
+                      class="c-input"
+                      name="location"
+                      placeholder="Location*"
+                      readonly=""
+                      value=""
+                    /><i class="icon-ic_next_cheveron c-input__icon"></i>
+                    <select id="select_location">
+                      <option class="option" value="0">Bangalore</option>
+                      <option class="option" value="1">Mumbai</option>
+                      <option class="option" value="2">Hyderabad</option>
+                      <option class="option" value="3">Chennai</option>
+                      <option class="option" value="4">Kolkata</option>
+                      <option class="option" value="5">Jaipur</option>
+                      <option class="option" value="6">Pune</option>
+                      <option class="option" value="7">Nagpur</option>
+                      <option class="option" value="8">Bhopal</option>
+                      <option class="option" value="9">Patna</option>
+                      <option class="option" value="10">Ranchi</option>
+                      <option class="option" value="11">Agartala</option>
+                      <option class="option" value="12">Dehradun</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="c-book-form__items">
+                  <div role="presentation" class="c-cta__primary">
+                    <a href="../VideoConsult/VideoConsult.html"><span>Book Appointment</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+       </div>
+
+<!-- slider one -->
+
+
+<div class="slider_1_heading">
+  <div> <img height="25px" width="25px" src="surgeriesImages/location_icon.jpg"></div>
+  <div id="slider_head">Our Doctors in</div>
+</div>
+<div class="slider_no_1" > 
+  <div class="slick-slider_one single-item">
+
+    <!-- first card -->
+    <div class="slider_carts">
+     
+      <div class="slider_carts_top">
+      <div class="cart_image">
+      <img src="surgeriesImages/doctor_1.jpg">
+      </div>
+      
+      <div class="cart_text">
+       <h4>Dr. Shabeer Ahmed</h4>
+       <p>General Surgeon</p>
+       <div class="flex_text">
+         <img height="25px" width="25px" src="surgeriesImages/thumbsUp.jpg">
+        <p>96% :35 years of Exp.</p> 
+        </div>
+      </div>
+    </div>
+     
+    <div class="slider_carts_bottom">
+        <div class="cart_image">
+          <img src="surgeriesImages/doctor_2.jpg">
+          </div>
+          
+          <div class="cart_text">
+           <h4>Dr. Gautham S L</h4>
+           <p>General Surgeon</p>
+           <div class="flex_text">
+             <img height="25px" width="25px" src="surgeriesImages/thumbsUp.jpg">
+             <p>100% :13 years of Exp.</p>
+            </div>
+
+          </div>
+          </div>
+
+    </div>
+   
+ <!-- 2nd card -->
+     
+     <div class="slider_carts">
+     
+      <div class="slider_carts_top">
+      <div class="cart_image">
+      <img src="surgeriesImages/doctor_3.jpg">
+      </div>
+      
+      <div class="cart_text">
+       <h4>Dr. Nanda Rajaneesh</h4>
+       <p>General Surgeon</p>
+       <div class="flex_text">
+         <img height="25px" width="25px" src="surgeriesImages/thumbsUp.jpg">
+         <p>83% :26 years of Exp.</p>
+        </div>
+      </div>
+    </div>
+     
+    <div class="slider_carts_bottom">
+        <div class="cart_image">
+          <img src="surgeriesImages/doctor_4.jpg">
+          </div>
+          
+          <div class="cart_text">
+           <h4>Dr. Abdul Razack.G.S</h4>
+           <p>General Surgeon</p>
+           <div class="flex_text">
+             <img height="25px" width="25px" src="surgeriesImages/thumbsUp.jpg">
+             <p>82% :19 years of Exp.</p>
+            </div>
+
+          </div>
+          </div>
+
+    </div>
+   
+     <!-- 3rd card -->
+     <div class="slider_carts">
+     
+      <div class="slider_carts_top">
+      <div class="cart_image">
+      <img src="surgeriesImages/doctor_5.jpg">
+      </div>
+      
+      <div class="cart_text">
+       <h4>Dr. Sujay BR</h4>
+       <p>General Surgeon</p>
+       <div class="flex_text">
+         <img height="25px" width="25px" src="surgeriesImages/thumbsUp.jpg">
+         <p>95% :16 years of Exp.</p>
+        </div>
+      </div>
+    </div>
+     
+    <div class="slider_carts_bottom">
+        <div class="cart_image">
+          <img src="surgeriesImages/doctor_6.jpg">
+          </div>
+          
+          <div class="cart_text">
+           <h4>Dr. Tarun Javali</h4>
+           <p>General Surgeon</p>
+           <div class="flex_text">
+             <img height="25px" width="25px" src="surgeriesImages/thumbsUp.jpg">
+             <p>97% :10 years of Exp.</p>
+            </div>
+
+          </div>
+          </div>
+
+    </div>
+   
+
+     <!-- 4th card -->
+     <div class="slider_carts">
+     
+      <div class="slider_carts_top">
+      <div class="cart_image">
+      <img src="surgeriesImages/doctor_7.jpg" >
+      </div>
+      
+      <div class="cart_text">
+       <h4>Dr. Niranjan P</h4>
+       <p>General Surgeon</p>
+       <div class="flex_text">
+         <img height="25px" width="25px" src="surgeriesImages/thumbsUp.jpg">
+         <p>100% :25 years of Exp.</p>
+        </div>
+      </div>
+    </div>
+     
+    <div class="slider_carts_bottom">
+        <div class="cart_image">
+          <img src="surgeriesImages/doctor_8.jpg">
+          </div>
+          
+          <div class="cart_text">
+           <h4>Dr. K.N. Srikanth</h4>
+           <p>General Surgeon</p>
+           <div class="flex_text">
+             <img height="25px" width="25px" src="surgeriesImages/thumbsUp.jpg">
+             <p>100% :25 years of Exp.</p>
+            </div>
+
+          </div>
+          </div>
+
+    </div>
+    
+
+    <!-- 5th card -->
+     <div class="slider_carts">
+     
+      <div class="slider_carts_top">
+      <div class="cart_image">
+      <img src="surgeriesImages/doctor_9.jpg">
+      </div>
+      
+      <div class="cart_text">
+       <h4>Dr. Ananda B B</h4>
+       <p>General Surgeon</p>
+       <div class="flex_text">
+         <img height="25px" width="25px" src="surgeriesImages/thumbsUp.jpg">
+         <p>100% :21 years of Exp.</p>
+        </div>
+      </div>
+    </div>
+     
+    <div class="slider_carts_bottom">
+        <div class="cart_image">
+          <img src="surgeriesImages/doctor_10.jpg">
+          </div>
+          
+          <div class="cart_text">
+           <h4>Dr. Sumanth Bhoopal</h4>
+           <p>General Surgeon</p>
+           <div class="flex_text">
+             <img height="25px" width="25px" src="surgeriesImages/thumbsUp.jpg">
+            <p>97% :18 years of Exp.</p> 
+            </div>
+
+          </div>
+          </div>
+
+    </div>
+   
+  </div>
+</div>
+ <!-- first slider end -->
+ <div id="separator_last" class="seperatorO"></div>
+<!-- slider two -->
+<div class="slider_2_heading">
+ <h3> What customers say</h3> 
+</div>
+<div class="slider_no_2">
+        <div class="slick-slider_two single-item">
+            
+                    <div class="slider_cart">
+                          <h4>Mahaveer singh</h4>
+                          <p>Ahmedabad</p>
+                        <p>
+                          Practo Care supported me throughout my surgery with
+                          insurance, documents and other assistance. I
+                          consulted a well-known expert for my piles
+                          treatment. I’d recommend Practo Care to anyone who
+                          needs a surgery.
+                        </p>
+                      
+                    </div>
+                 
+
+                    <div class="slider_cart">
+                            <h4>Rajesh Yadav</h4>
+                            <p>Bangalore</p>
+                         <p>
+                          I’d definitely recommend Practo Care for their
+                          support at every step of my pilonidal sinus
+                          treatment. The doctor was highly experienced and the
+                          surgery went well. The team took care of everything
+                          from day one to the day of discharge very
+                          efficiently.
+                        </p>
+                    </div>
+                      
+                 
+                    <div class="slider_cart">
+                            <h4>Vivek</h4>
+                            <p>Delhi</p>
+                          <p>Thanks to Practo Care, I could focus on my
+                          recovery while the team took care of all the
+                          paperwork, logistics and financial support. The
+                          doctor was good and clearly explained the issue and
+                          treatment. After that, from consultation to
+                          discharge, everything was handled smoothly by Practo
+                          Care. Very happy with my experience.
+                          </p>
+                        </div>
+                     
+                        
+                          <div class="slider_cart">
+                           <h4>Iqbal ahmed quereshi</h4>
+                            <p>Thane</p>
+                          <p>I contacted Practo Care for my piles
+                          treatment. The doctor was very approachable and
+                          listed out the best options. After that, the
+                          insurance, coordination and other formalities were
+                          taken care of by the Practo Care team. Overall, a
+                          seamless experience.
+                        </p>
+                        </div>
+                     
+                     
+            </div> 
+          </div>        
+            </div>
+          </div>  
+
+          </div>
+
+        </div>
+          <!--closing of main container -->
+<!-- footer part -->
+<div class="mweb-hide">
+<div class="c-footer">
+  <div class="logo">
+    <img
+      src="../PractoImg/footerimg/white_practo_logo.svg"
+      alt="Practo Care"
+    />
+  </div>
+  <p class="row-1">
+    Our vision is to help mankind live healthier, longer lives by
+    making quality healthcare accessible, affordable and convenient.
+  </p>
+  <p class="row-2">Made by Practeons @ Bangalore.</p>
+</div>
+</div>
+</div>
+</body>
+<script src="{% static 'surgeries/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'surgeries/slick.min.js' %}"></script>
+</html>
+
+
+<script src="{% static 'surgeries/guidingCollaps.js' %}"></script>

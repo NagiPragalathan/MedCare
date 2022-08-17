@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp Verification</title>
+    <link rel="stylesheet" href="{% static 'login/otpVerify.css' %}">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="new-login-area">
+   
+        <h3 class="request-otp-header">Your OTP is '5869'</h3>
+        <div class="form-group login-label">
+            <label for="inputnumber">Enter one Time Password</label>
+            <br>
+            <input  id="match" type="text" class="form-control input-edit" placeholder='Enter OTP' id="match">
+            <div id="error"></div>
+          
+        </div>
+       <button  type="button" id="btn" class="request-otp" onclick="errorMessage()">Verify</button>
+    </div>
+    </div>
+</body>
+</html>
+
+<script src="{% static 'login/js/otpVerify.js' %}"></script>

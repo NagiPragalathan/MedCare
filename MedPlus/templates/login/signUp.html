@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../Home page/Home Page Images/title logo/favicon.webp"  type = "image/x-icon">
+    <title>Sing Up</title>
+    <link rel="stylesheet" href="{% static 'login/signUp.css' %}">
+  </head>
+  <body>
+
+        <!-- Nav bhar started  -->
+      
+      <!-- Nav bar end  -->
+      <div id="NavBar">
+        <!-- Nav have four section -->
+        <div class="NavFirstSection">
+           <a href="/Home.html"><img src="../PractoImg/practonav logo/practo.svg" alt="" /></a> 
+        </div>
+        <div class="NavSecondSection">
+            <a href="../find doctor/practo find doctor page/find doctor.html"><div class="second1Text">
+                <h4>Find Doctors</h4>
+                <p>Book an appointment</p>
+            </div></a>
+            <a href="../VideoConsult/VideoConsult.html"><div class="second2Text">
+                <h4>Video Consult</h4>
+                <p>Consult top doctors</p>
+            </div></a>
+            <a href="../Medicines/Medicine.html"><div class="second3Text">
+                <h4>Medicines</h4>
+                <p>Practo pharmacy</p>
+            </div></a>
+            <a href="../labtests/Labtests.html"><div class="second4Text">
+                <h4>Lab Tests</h4>
+                <p>Book tests & checkup</p>
+            </div></a>
+            <a href="../Surgeries/surgeries.html"><div class="second5Text" >
+                <h4>Surgeries</h4>
+                <p>Expert surgical care</p>
+            </div></a>
+        </div>
+        <div class="NavThirdSection">
+           <ul>
+               <li id="forProvider" onclick="menuClick()">For Providers
+                <i class="fas fa-angle-down"></i>
+                    <div id="forProvidersmanu" class="samenav2">
+                        <ul>
+                           <a href="#"><li id="newtext">Practo Prime <span id="new">New</span></li></a> 
+                           <a href="#"> <li>Software for providers</li></a>
+                           <a href="../find doctor/practo find doctor page/doctor profile/doctor profile.html"><li>List your practice for Free</li></a> 
+                           <a href="#"><li>Corporate wellness</li></a> 
+                        </ul>
+                    </div>
+               </li>
+               <li id="SecurityHelpNav">Security Help   <i class="fas fa-angle-down"></i>
+                <div id="Securitysmanu" class="samenav2">
+                    <ul>
+                        <a href=""><li id="newtext">Data Security</li></a>
+                       <a href=""><li>Help</li></a> 
+                    </ul>
+                </div>
+              
+               </li>
+            </ul>
+        </div>
+        <div class="NavFourSection">
+            <div class="loginSignUp" id="loginbutton">
+                <a href="login.html"><Button>Login / SignUp</Button></a>
+            </div>
+        </div>
+    </div>
+      <hr>
+      <!-- login nav bar -->
+
+      <div class="bodyContainer" id="spSignup">
+     
+        <div class="secondary-nav">
+            
+               <div><a href="login.html" id="loginLink">Login</a></div>
+               <div><a href="signUp.html" id="registerLink">Register</a></div>
+           
+        </div>
+      
+
+        <!-- main part of login page -->
+        <div id="commonContainer">
+    <div id="leftImagePart">
+      <img src="login_img.jpg" alt="logInImage">
+    </div>
+
+
+    <div id=loginPageRight>
+
+      <div id="titlePartOfLoginPage">
+        <div id="joinPracto"><h3>Join Practo</h3></div>
+        
+           
+        <div id="doctor"><h5>Are you a doctor?</h5></div>
+       
+        <a href="signUp.html"  id="normal-doctor-signup">
+        
+          <div class="blue-link"><h6>Register Here</h6></div>
+        </a>
+      
+        
+      </div>
+
+    <div  class="loginPageRight">
+    <form>
+      <div id="fullName">
+      <div  class="padding_bottom"><label>Full Name</label></div>
+      <div><input type="text" id="email" placeholder="Full Name" /></div>
+      <div class="error"></div>
+    </div>
+    <div id="MobileNumber">
+      <div class="padding_bottom"><label>Mobile Number</label></div>
+      <div>
+      <select>
+        <option selected value="IN">+91(IND)</option>
+        <option value="SG">+65(SGP)</option>
+        <option value="SG">+63(PHL)</option>
+        <option value="SG">+60(MYS)</option>
+        <option value="SG">+62(IND)</option>
+        <option value="SG">+55(BRA)</option>
+        <option value="SG">+52(MEX)</option>
+        <option value="SG">+54(ARG)</option>
+        <option value="SG">+56(CHL)</option>
+        <option value="SG">+84(VNM)</option>
+        <option value="SG">+971(UAE)</option>
+        <option value="SG">+1(USA)</option>
+      </select>
+   
+     <input type="text"  id="contact" placeholder="Mobile Number" /></div>
+     <div class="error2"></div>
+    </div>
+      
+      <div id="password">
+        <div class="padding_bottom"><label>Create Password</label></div>
+        <div><input type="password" id="pass" placeholder="Password" /></div>
+        <div class="error3"></div>
+    </div>
+   
+
+    </div>
+  
+ <div id="ckeckbox_text">
+<input id="myinput" type="checkbox" />
+<label for="myinput" id="indented-checkbox-text">Receive relevant offers and promotional communication<br> form practo.</label>
+</div>
+
+  <div id="iAgree">By signing up, I agree to <a href="termsCondition.html">terms</a></div>
+
+
+  <div id="SignInButton">
+    <button  id="submit">SIGN UP</button>
+  </div>
+  </div>
+  </div>
+    </div>
+    </form>
+  </body>
+</html>
+
+
+<script src="{% static 'login/js/signUp.js' %}"></script>
+
+
+ 

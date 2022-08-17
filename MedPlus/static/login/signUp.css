@@ -1,0 +1,520 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #2d2d32;
+}
+
+/* NavBar Css part start */
+/* 
+#NavBar {
+    display: grid;
+    grid-template-columns: 11% 45% 17% 10%;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+#NavBar>.NavFirstSection {
+    width: 95%;
+    align-items: center;
+}
+
+#NavBar>.NavFirstSection>img {
+    width: 72%;
+}
+
+#NavBar>.NavSecondSection {
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+}
+
+
+
+#NavBar>.NavSecondSection>div {
+    width: 40%;
+    padding: 4px;
+}
+
+#NavBar>.NavSecondSection>div>h4 {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 550;
+    color: #2d2d32;
+}
+
+#NavBar>.NavSecondSection>div>p {
+    font-size: 12px;
+    color: #787887;
+}
+#NavBar>.NavSecondSection>div>h4:hover{
+    color: #112092;
+}
+
+#NavBar>.NavThirdSection > ul > li{
+    color: #414146;
+    font-size: 14px;
+    padding: 8px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+
+#NavBar>.NavThirdSection > ul{
+    align-items: center;
+    display: flex;
+    position: relative;
+    list-style: none;
+    gap:0px;
+}
+
+#forProvidersmanu , #Securitysmanu{
+    display: none;
+
+}
+
+#forProvider:hover #forProvidersmanu{
+
+    display: block;
+   width: 230px;
+    margin-left: -100px;
+    position: absolute;
+    left:100;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#SecurityHelpNav:hover #Securitysmanu{
+    display: block;
+    width: 230px;
+     margin-left: -60px;
+     position: absolute;
+     left:100;
+     background-color: #ffffff;
+     border-radius: 5px;
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.samenav2 > ul {
+    list-style: none;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+.samenav2 > ul > li {
+    margin: 10px 0px;
+    padding: 15px;
+}
+#new{
+    background-color: rgb(255, 174, 0);
+    font-size: 12px;
+    padding: 6px;
+    color: #fff;
+   float: right;
+   margin-right: 20px;
+   margin-top: -2px;
+}
+
+
+.samenav2 > ul > li:hover{
+   background-color: #F0F1F4;
+}
+
+#NavBar>.NavFourSection>.loginSignUp>a>button {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    background-color: transparent;
+    color: #787887;
+    border-radius: 4px;
+    border: solid 1px#d3d3d3;
+    padding: 8px 10px;
+}
+
+#NavBar>.NavFourSection>.loginSignUp>a>button:hover {
+    border: solid 1px#94dfec;
+    color: #00d9ff;
+} */
+
+
+/* NavBar Css part end */
+
+/* sign up container */
+
+#titlePartOfLoginPage{
+    display: flex;
+    color: #77777e;
+    padding: 2%;
+}
+
+#spSignup {
+    width: 60%;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    min-height: 100%;
+    margin: auto;
+}
+
+
+.secondary-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    border-bottom: 1px
+ solid rgba(216,216,216,0.5);
+ padding: 20px;
+
+
+}
+#loginLink, #registerLink{
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+#loginLink:focus{
+    color: #13bef0;
+   
+}
+
+#registerLink:focus{
+    color: #13bef0;
+   
+}
+/* common container */
+
+#commonContainer{
+    display: flex;
+    padding: 50px;
+}
+#leftImagePart {
+   width: 50%;
+}
+
+#loginPageRight{
+    width: 50%;
+  
+}
+.loginPageRight > div {
+    width: 40%;
+    border-bottom:5px solid  #D3D3D3
+      
+}
+#leftImagePart > img {
+   
+    width: 94%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+/* right login part */
+
+
+form > div {
+    padding: 1% 5%;
+}
+
+label, select {
+    color: #84848f;
+    padding: 2%;
+    font: weight 2px;
+    font-size: 14px;
+    
+}
+.padding_bottom{
+    margin: 1% 0;
+}
+
+input{
+    padding: 2.5%;
+    width: 88%;
+}
+#contact{
+    width: 57%;
+}
+
+#submit{
+    width: 85%;
+    padding: 3%;
+    background: #13bef0;
+    color: #FFF;
+    border-radius: 5px;
+   border: none;
+   margin: 2% 5%;
+}
+#submit:hover{
+  color: #112092;
+}
+
+
+::placeholder{
+    color:rgb(190, 188, 188);
+}
+.blue-link{
+    color: #ed9b2d;
+    
+}
+ #normal-doctor-signup{
+    text-decoration: none;
+}
+#joinPracto{
+    padding:  2px 15px;
+}
+#doctor{
+padding: 3px 5px 2px 60px;
+font-size: 14px;
+color: #84848f;
+
+}
+.blue-link{
+    padding: 3px 2px;
+} 
+
+#titlePartOfLoginPage{
+    display: flex;
+    border-bottom: 1px solid rgb(241, 240, 240);
+}
+#loginPageRight{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+#iAgree{
+    font-size: x-small;
+    padding: 2% 12%;
+    color: #868699;
+}
+
+
+#iAgree > a{
+    text-decoration: none;
+    color: #00d9ff;
+    border: none;
+}
+#indented-checkbox-text{
+  margin-left: 0.5em;
+  display: block;
+  position: relative;
+ 
+}
+#indented-checkbox-text{
+    display: inline-block;
+}
+
+#ckeckbox_text{
+    display: flex;
+    gap: 0px;
+}
+
+#myinput{
+    width: 5%;
+    padding: 5%;
+    margin: 3% 0% 1% 4%;
+}
+#indented-checkbox-text{
+    width: 95%;
+    font-size: 12px;
+}
+.padding_bottom{
+    padding: 1.8% 0;
+}
+
+input[type=text]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
+}
+
+input[type=password]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+input[type=number]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+input[type=checkbox]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+input[type=text]:focus{
+    outline: 2px solid #32c5f1;
+    border-radius: 3px;
+   
+}
+input[type=number]:focus{
+    outline: 2px solid #32c5f1;
+    border-radius: 3px;
+   
+}
+input[type=password]:focus{
+    outline: 2px solid #32c5f1;
+    border-radius: 3px;
+   
+}
+
+select{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+
+#registerLink{
+    color: #00d9ff;
+}
+
+
+
+
+#NavBar {
+    display: grid;
+    grid-template-columns: 11% 45% 17% 10%;
+    padding-bottom: 20px;
+    justify-content: center;
+    padding: 15px 0 0 0;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  #NavBar>.NavFirstSection {
+    width: 95%;
+    align-items: center;
+  }
+  
+  #NavBar>.NavFirstSection> a > img {
+    width: 72%;
+  }
+  
+  #NavBar>.NavSecondSection {
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+  }
+  
+  
+  
+  #NavBar>.NavSecondSection> a {
+    width: 20%;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  #NavBar>.NavSecondSection> a > div>h4 {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 550;
+    color: #2d2d32;
+  }
+  
+  #NavBar>.NavSecondSection> a > div>p {
+    font-size: 12px;
+    color: #787887;
+  }
+  #NavBar>.NavSecondSection> a > div>h4:hover{
+    color: #112092;
+  }
+  
+  #NavBar>.NavThirdSection > ul > li{
+    color: #414146;
+    font-size: 14px;
+    padding: 8px;
+    font-weight: 200;
+    cursor: pointer;
+  }
+  
+  
+  #NavBar>.NavThirdSection > ul{
+    align-items: center;
+    display: flex;
+    position: relative;
+    list-style: none;
+    gap:0px;
+  }
+  
+  #forProvidersmanu , #Securitysmanu{
+    display: none;
+  
+  }
+  
+  #forProvider:hover #forProvidersmanu{
+    z-index: 1;
+    display: block;
+   width: 230px;
+    margin-left: -100px;
+    position: absolute;
+    left:100;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  
+  #SecurityHelpNav:hover #Securitysmanu{
+    display: block;
+    width: 230px;
+     margin-left: -60px;
+     position: absolute;
+  z-index: 1;
+     background-color: #ffffff;
+     border-radius: 5px;
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  
+  .samenav2 > ul {
+    list-style: none;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+  
+  }
+  .samenav2 > ul > a > li {
+    margin: 10px 0px;
+    padding: 15px;
+  }
+  #new{
+    background-color: rgb(255, 174, 0);
+    font-size: 12px;
+    padding: 6px;
+    color: #fff;
+   float: right;
+   margin-right: 20px;
+   margin-top: -2px;
+  }
+  
+  
+  .samenav2 > ul > a> li:hover{
+   background-color: #F0F1F4    ;
+  }
+  
+  #NavBar>.NavFourSection>.loginSignUp>a>button {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    background-color: transparent;
+    color: #787887;
+    border-radius: 4px;
+    border: solid 1px#d3d3d3;
+    padding: 8px 10px;
+  }
+  
+  #NavBar>.NavFourSection>.loginSignUp>a>button:hover {
+    border: solid 1px#00d9ff;
+    color: #00d9ff;
+  }
+  #blue_border{
+    border-bottom: 5px solid #14bef0;
+    padding-bottom: 12px;
+  }

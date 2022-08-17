@@ -1,0 +1,376 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  #nav_div {
+    height: 80px;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  #health_package {
+    height: 65px;
+    width: 100%;
+    /* border: 1px solid green; */
+    margin-left: 85px;
+    font-size: 12px;
+    color: rgb(193, 193, 201);
+  }
+  #health_package > span {
+    color: rgb(44, 54, 142);
+  }
+  #health_package > button {
+    height: 30px;
+    width: 100px;
+    border: 1px solid rgb(120, 120, 135);
+    margin-left: 25px;
+    background-color: white;
+  }
+  #main_container {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    /* border: 1px solid rgb(44, 54, 142); */
+    margin-top: 20px;
+    margin-left: 85px;
+  }
+  .image_div {
+    height: 30%;
+    width: 20%;
+    /* border: 1px solid red; */
+  }
+  .image_div > img {
+    height: 98%;
+    width: 98%;
+  }
+  .data_div {
+    height: 90%;
+    width: 36%;
+    /* border: 1px solid red; */
+  }
+  .data_div > .discount {
+    height: 28px;
+    width: 60px;
+    background-color: rgb(13, 169, 95);
+  }
+  .data_div > .discount > div {
+    font-size: 13px;
+    margin-left: 5px;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  .span {
+    color: rgb(126, 127, 142);
+    font-weight: lighter;
+  }
+  .bold {
+    height: 5px;
+    background-color: rgb(248, 248, 255);
+    border: none;
+  }
+  .light {
+    font-weight: lighter;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .provider {
+    display: flex;
+    gap: 30%;
+  }
+  .provider_div {
+    height: 100px;
+    width: 45%;
+    /* border: 1px solid red; */
+  }
+  .tag {
+    height: 50px;
+    width: 90px;
+    border: 1px solid rgb(120, 120, 135);
+    margin-top: 50px;
+    border-radius: 8px;
+  }
+  .tag > img {
+    height: 90%;
+    width: 95%;
+  }
+  #selected_package {
+    height: 500px;
+    width: 25%;
+    /* border: 1px solid blue; */
+  }
+  .price {
+    display: flex;
+    gap: 50px;
+  }
+  .info {
+    height: 50px;
+    width: 65%;
+    /* border: 1px solid firebrick; */
+  }
+  .info > span {
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .test {
+    font-size: 12px;
+    /* border: 1px solid rgb(184, 187, 217); */
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    margin-top: 15px;
+  }
+  #rupee {
+    height: 30px;
+    width: 20%;
+    /* border: 1px solid tomato; */
+    font-size: 12px;
+    padding-left: 10px;
+  }
+  .discount{
+      display: flex;
+      gap: 210px;
+      /* border: 1px solid tomato; */
+      height: 40px;
+      width: 100%;
+      font-size: 12px;
+  }
+  .text {
+      color: rgb(13,169,95);
+      margin-top: 10px;
+      font-weight: bold;
+  }
+  .value{
+      color: rgb(13,169,95);
+      margin-top: 10px;
+      font-weight: bold;
+  }
+  .total{
+      display: flex;
+      gap: 230px;
+      /* border: 1px solid tomato; */
+      height: 40px;
+      width: 100%; 
+      font-size: 13px;
+  }
+  .data{
+      font-weight: 700;
+  }
+  #selected_package > button {
+      background-color: rgb(20,190,240);
+      color: white;
+      font-weight: bold;
+      height: 40px;
+      width: 98%;
+      border: none;
+      border-radius: 5px;
+  }
+  #selected_package > #healthcash {
+      height: 20px;
+      width: 100%;
+      background-color: rgb(238,251,240);
+      color:  rgb(13,169,95);
+      margin-top: 15px;
+      font-size: 12px;
+      text-align: center;
+  }
+  #helpline{
+      background-color: rgb(40,50,140);
+      height: 170px;
+      width: 90%;
+      border-radius: 10px;
+      margin: auto;
+      margin-top: 25px;
+      padding-left: 20px;
+      
+  }
+  #expert_info{
+      height: 100px;
+      width: 100%;
+      display: flex;
+      gap: 30px;
+      /* border: 1px solid red; */
+     
+  }
+  #heading_part{
+      height: 98%;
+      width: 63%;
+      /* border: 1px solid green; */
+  }
+  #heading_part > h4 {
+      color: white;
+      
+  }
+  #heading_part > h6 {
+      color: white;
+      line-height: 1px;
+  }
+  #expert_img{
+      height: 100%;
+      width: 20%;
+      /* border: 1px solid yellow; */
+  }
+  #expert_img > img {
+      padding-top: 23px;
+  }
+  #phone{
+      height: 50px;
+      width: 75%;
+      border: 3px rgb(116,126,212);
+      border-style: dashed;
+      margin: auto;
+      margin-top: 8px;
+      border-radius: 5px;
+      
+  }
+  #number{
+      margin-top: 20px;
+  }
+  #number >#icon{
+      color: white;
+      margin: auto;
+      padding-top: 30px;
+      padding-left: 30px;
+      margin-top: 10px;
+  }
+  #number > span {
+      color: white;
+      font-weight: bold;
+      margin-top: 30px;
+  }
+  #NavBar {
+    display: grid;
+    grid-template-columns: 13% 50% 18% 10%;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 0px;
+    align-items: center;
+    padding-bottom: 0px;
+  }
+  
+  #NavBar > .NavFirstSection {
+    width: 95%;
+    align-items: center;
+  }
+  
+  #NavBar > .NavFirstSection > img {
+    width: 72%;
+  }
+  
+  #NavBar > .NavSecondSection {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  #NavBar > .NavSecondSection > a {
+    width: 20%;
+    padding: 4px;
+    text-decoration: none;
+  }
+  
+  #NavBar > .NavSecondSection > a > div > h4 {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 550;
+    color: #2d2d32;
+    margin: 0;
+  }
+  
+  #NavBar > .NavSecondSection > a > div > p {
+    font-size: 12px;
+    color: #787887;
+    margin: 0;
+  }
+  #NavBar > .NavSecondSection > a > div > h4:hover {
+    color: #112092;
+  }
+  
+  #NavBar > .NavThirdSection > ul > li {
+    color: #414146;
+    font-size: 14px;
+    padding: 8px;
+    font-weight: 200;
+    cursor: pointer;
+  }
+  
+  #NavBar > .NavThirdSection > ul {
+    align-items: center;
+    display: flex;
+    position: relative;
+    list-style: none;
+    gap: 0px;
+    z-index: 1;
+  }
+  
+  #forProvidersmanu,
+  #Securitysmanu {
+    display: none;
+  }
+  
+  #forProvider:hover #forProvidersmanu {
+    display: block;
+    width: 230px;
+    margin-left: -100px;
+    position: absolute;
+    left: 100;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  
+  #SecurityHelpNav:hover #Securitysmanu {
+    display: block;
+    width: 230px;
+    margin-left: -60px;
+    position: absolute;
+    left: 100;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  
+  .samenav2 > ul {
+    list-style: none;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+  .samenav2 > ul > a > li {
+    margin: 10px 0px;
+    padding: 15px;
+  }
+  #new {
+    background-color: rgb(255, 174, 0);
+    font-size: 12px;
+    padding: 6px;
+    color: #fff;
+    float: right;
+    margin-right: 20px;
+    margin-top: -2px;
+  }
+  
+  .samenav2 > ul > a > li:hover {
+    background-color: #f0f1f4;
+  }
+  
+  #NavBar > .NavFourSection > .loginSignUp > a > button {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    background-color: transparent;
+    color: #787887;
+    border-radius: 4px;
+    border: solid 1px#d3d3d3;
+    padding: 8px 10px;
+  }
+  
+  #NavBar > .NavFourSection > .loginSignUp > a > button:hover {
+    border: solid 1px#00d9ff;
+    color: #00d9ff;
+  }
+  

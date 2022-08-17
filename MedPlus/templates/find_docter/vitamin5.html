@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'find_docter/vitamin5.css' %}" />
+    <title>Fever Panel 1</title>
+    <script
+      src="https://kit.fontawesome.com/fba4772d23.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div id="NavBar">
+      <!-- Nav have four section -->
+      <div class="NavFirstSection">
+         <a href="/Home page/Home.html"><img src="/PractoImg/practonav logo/practo.svg" alt="" /></a> 
+      </div>
+      <div class="NavSecondSection">
+          <a href="./find doctor.html"><div class="second1Text">
+              <h4>Find Doctors</h4>
+              <p>Book an appointment</p>
+          </div></a>
+          <a href="./VideoConsult/VideoConsult.html"><div class="second2Text">
+              <h4>Video Consult</h4>
+              <p>Consult top doctors</p>
+          </div></a>
+          <a href="/Medicines/Medicine.html"><div class="second3Text">
+              <h4>Medicines</h4>
+              <p>Practo pharmacy</p>
+          </div></a>
+          <a href="/labtests/Labtests.html"><div class="second4Text">
+              <h4>Lab Tests</h4>
+              <p>Book tests & checkup</p>
+          </div></a>
+          <a href="/Surgeries/surgeries.html"><div class="second5Text">
+              <h4>Surgeries</h4>
+              <p>Expert surgical care</p>
+          </div></a>
+      </div>
+      <div class="NavThirdSection">
+         <ul>
+             <li id="forProvider" onclick="menuClick()">For Providers
+              <i class="fas fa-angle-down"></i>
+                  <div id="forProvidersmanu" class="samenav2">
+                      <ul>
+                         <a href="#"><li id="newtext">Practo Prime <span id="new">New</span></li></a> 
+                         <a href="#"> <li>Software for providers</li></a>
+                         <a href="/find doctor/practo find doctor page/doctor profile/doctor profile.html"><li>List your practice for Free</li></a> 
+                         <a href="#"><li>Corporate wellness</li></a> 
+                      </ul>
+                  </div>
+             </li>
+             <li id="SecurityHelpNav">Security Help   <i class="fas fa-angle-down"></i>
+              <div id="Securitysmanu" class="samenav2">
+                  <ul>
+                      <a href=""><li id="newtext">Data Security</li></a>
+                     <a href=""><li>Help</li></a> 
+                  </ul>
+              </div>
+            
+             </li>
+          </ul>
+      </div>
+      <div class="NavFourSection">
+          <div class="loginSignUp" id="loginbutton">
+              <a href="/login/signUp/login.html"><Button>Login / SignUp</Button></a>
+          </div>
+         
+      </div>
+  </div>
+  <hr class="bold">
+
+    <div id="health_package">
+      Practo > Health Package > Vitamin Deficiency Health Checkup
+      <br />
+      <br />
+      <span>Packages in </span>
+      <button>Banglore</button>
+    </div>
+
+    <div id="main_container">
+      <div class="image_div">
+        <img src="../images/help5.webp" alt="" />
+      </div>
+      <div class="data_div">
+        <div class="discount">
+         <div>24% off</div> 
+        </div>
+        <div class="health_checkup">
+          <h2>
+            Fever Panel 1
+            <br />
+            
+          </h2>
+          <h5>
+            <span class="span">Ideal for women aged</span>
+            <span> 1-100 years</span>
+            <br />
+            <br />
+            <span class="span">Includes</span>
+            <span>46 tests</span>
+            <br />
+            <br />
+            <hr class="bold" />
+          </h5>
+          <div class="Book_checkup">
+            <h4>Who should book this checkup?</h4>
+            <h5 class="light">
+                This checkup is ideal for women between 18-55 years of age.If you have a family history of or have been diagnosed with Kidney Disorder, Thyroid Disorder, Filarial Infestation, Liver Disorder, Intellectual Abnormality, Hormonal Abnormalities, Urinary Tract Infection and , you should get this checkup done twice a year.
+            </h5>
+          </div>
+          <hr class="bold" />
+          <div class="provider">
+            <div class="provider_div">
+              <h4>Provived By</h4>
+              <h5>Practo Labs</h5>
+            </div>
+            <div class="tag">
+              <img src="../images/tag.png" alt="" />
+            </div>
+          </div>
+          <hr />
+          <h5 class="light">
+            Your tests will be conducted in one of our partner labs to ensure
+            highest accuracy of your reports.
+          </h5>
+          <!-- <br /> -->
+          <hr class="bold" />
+        </div>
+        <h4>What preparation is needed for this Checkup?</h4>
+        <h5 class="light">No Preparation is required</h5>
+        <br>
+        <br>
+        <hr class="bold">
+      </div>
+      <div id="selected_package">
+        <h3>Selected Package</h3>
+        <hr />
+        <div class="price">
+          <div class="info">
+            <span> Fever Panel 1</span>
+            <br />
+            <div class="test">Includes 46 tests</div>
+          </div>
+          <div id="rupee">₹1000</div>
+        </div>
+        <hr />
+        <div class="discount">
+          <div class="text">Discount</div>
+          <div class="value">-₹201</div>
+        </div>
+        <hr />
+        <div class="total">
+          <div class="data">TOTAL</div>
+          <div>₹799</div>
+        </div>
+        <button>Book Now</button>
+        <div id="healthcash">+ Get10% Healthcash back</div>
+        <div id="helpline">
+          <div id="expert_info">
+            <div id="heading_part">
+              <h4>Need help with booking your test?</h4>
+              <h6>Our experts are here to help you</h6>
+            </div>
+            <div id="expert_img">
+                <img src="../images/helpline.svg" alt="">
+            </div>
+          </div>
+          <div id="phone">
+              <div id="number">
+                <span id="icon">
+                    <i class="fas fa-phone-alt"></i>
+                   </span>
+                   <span>
+                    +91 8045684087</span>
+              </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
