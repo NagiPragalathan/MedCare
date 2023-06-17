@@ -1,8 +1,6 @@
-1 / 1
-
 # MedCare
 
-![MedCare Logo](https://img.freepik.com/free-vector/hospital-logo-design-vector-medical-cross_53876-136743.jpg?w=2000)
+![MedCare Logo](https://img.freepik.com/free-vector/hospital-logo-design-vector-medical-cross_53876-136743.jpg?w=50)
 
 MedCare is an ongoing project aimed at revolutionizing healthcare management. It provides a comprehensive platform for users to find doctors, consult with medical professionals, and efficiently manage patient details, surgeries, and lab test results. Although the project is currently in the development phase, significant progress has been made in completing the UI and implementing UI render connections, as well as the login and logout functionalities.
 
