@@ -7,14 +7,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./Home Page Images/title logo/favicon.webp"  type = "image/x-icon">
+    <link rel="icon" href=" {% static 'Home Page Images/title logo/favicon.webp' %} "  type = "image/x-icon">
     <title>Buy Medicines,Health Products Online | India's Most Reliable Online Medical Store | Practo</title>
     <script src="https://kit.fontawesome.com/d829865ea3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{% static 'home/slick.css' %}">
-    <link rel="stylesheet" href="{% static 'home/slick-theme.css' %}">
-    <link rel="stylesheet" href="{% static 'home/home.css' %}" />
-    <link rel="stylesheet" href="{% static 'home/homeresipove.css' %}">
-    <link rel="stylesheet" href="{% static 'home/user.css' %}">
+    <link rel="stylesheet" href=" {% static 'home/slick.css' %} ">
+    <link rel="stylesheet" href=" {% static 'home/slick-theme.css' %} ">
+    <link rel="stylesheet" href=" {% static 'home/home.css' %} " />
+    <link rel="stylesheet" href=" {% static 'home/homeresipove.css' %} ">
+    <link rel="stylesheet" href=" {% static 'home/user.css' %} ">
 </head>
 
 <body>
@@ -27,10 +27,10 @@
                 <i class="fas fa-bars" onclick="showrespovemeni()"></i>
             </div>
             <div class="renavbarimg">
-                <img src="../PractoImg/practonav logo/practo.svg" alt="">
+                <img src=" {% static '.PractoImg/practonav logo/practo.svg' %} " alt="">
             </div>
             <div class="renavba">
-                <a href="/login"><button id="singupRe">Sign in</button></a>
+                <a href=" {% static '/login' %} "><button id="singupRe">Sign in</button></a>
 
                 <div class="userprofiles" id="userprofileshows">
                     <div class="usernames" onclick= "shareprofiles()">
@@ -39,7 +39,7 @@
                     <div class="userdatas" id="resuser">
                         <div class="userimgandtexts">
                             <div class="userdemoimgs">
-                                <img src="./Home Page Images/Man_Silhouette2.jpg" alt="">
+                                <img src=" {% static 'Home Page Images/Man_Silhouette2.jpg' %} " alt="">
                             </div>
                             <div class="usernamenums">
                                 <p id="usernameinsides">sdas</p>
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <div class="usergptocartpages">
-                            <a href="labtest"><p>Buy Product</p></a>
+                            <a href=" {% static 'labtest' %} "><p>Buy Product</p></a>
                         </div>
                         <div class="usergptocartpages userlogouts" onclick = "logout()">
                             <h5>Log Out</h5>
@@ -59,15 +59,15 @@
            
         </div>
         <div class="respoviesNavbarleftmanu">
-            <div class="respoviesNavbarleftmanuimg"> <i class="fas fa-times" onclick="closethermeanu()"></i> <img src="./Home Page Images/practonav logo/practo.svg" alt=""> </div>
+            <div class="respoviesNavbarleftmanuimg"> <i class="fas fa-times" onclick="closethermeanu()"></i> <img src=" {% static 'Home Page Images/practonav logo/practo.svg' %} " alt=""> </div>
 
             <div class="allpadesrespvenav">
                 <ul>
-                    <li><a href="/find_docter"><i class="fas fa-search"></i><h6>Find Doctors -</h6><p> Book an appointment</p></a></li></a>
-                    <li><a href="/video_consult"><i class="fas fa-video"></i><h6>Video Consult -</h6><p>  Consult top doctors</p></a></li>
-                    <li><a href="/Medicines/Medicine.html"><i class="fas fa-prescription-bottle-alt"></i><h6>Medicines -</h6><p>  Practo pharmacy</p></a></li>
-                    <li><a href="/labtest"><i class="fas fa-flask"></i><h6>Lab Tests -</h6><p>  Expert surgical care</p></a></li>
-                    <li><a href="/surgeries"><i class="fas fa-book-medical"></i><h6>Surgeries -</h6><p>  Expert surgical care</p></a></li>
+                    <li><a href=" {% static '/find_docter' %} "><i class="fas fa-search"></i><h6>Find Doctors -</h6><p> Book an appointment</p></a></li></a>
+                    <li><a href=" {% static '/video_consult' %} "><i class="fas fa-video"></i><h6>Video Consult -</h6><p>  Consult top doctors</p></a></li>
+                    <li><a href=" {% static '/Medicines/Medicine.html' %} "><i class="fas fa-prescription-bottle-alt"></i><h6>Medicines -</h6><p>  Practo pharmacy</p></a></li>
+                    <li><a href=" {% static '/labtest' %} "><i class="fas fa-flask"></i><h6>Lab Tests -</h6><p>  Expert surgical care</p></a></li>
+                    <li><a href=" {% static '/surgeries' %} "><i class="fas fa-book-medical"></i><h6>Surgeries -</h6><p>  Expert surgical care</p></a></li>
                 </ul>
             </div>
             
@@ -78,26 +78,26 @@
         <div id="NavBar">
             <!-- Nav have four section -->
             <div class="NavFirstSection">
-               <a href=""><img src="./Home Page Images/practonav logo/practo.svg" alt="" /></a> 
+               <a href=" {% static '' %} "><img src=" {% static 'Home Page Images/practonav logo/practo.svg' %} " alt="" /></a> 
             </div>
             <div class="NavSecondSection">
-                <a href="find_docter"><div class="second1Text">
+                <a href=" {% static 'find_docter' %} "><div class="second1Text">
                     <h4>Find Doctors</h4>
                     <p>Book an appointment</p>
                 </div></a>
-                <a href="/video_consult"><div class="second2Text">
+                <a href=" {% static '/video_consult' %} "><div class="second2Text">
                     <h4>Video Consult</h4>
                     <p>Consult top doctors</p>
                 </div></a>
-                <a href="../Medicines/Medicine.html"><div class="second3Text">
+                <a href=" {% static '.Medicines/Medicine.html' %} "><div class="second3Text">
                     <h4>Medicines</h4>
                     <p>Practo pharmacy</p>
                 </div></a>
-                <a href="/labtest"><div class="second4Text">
+                <a href=" {% static '/labtest' %} "><div class="second4Text">
                     <h4>Lab Tests</h4>
                     <p>Book tests & checkup</p>
                 </div></a>
-                <a href="/surgeries"><div class="second5Text">
+                <a href=" {% static '/surgeries' %} "><div class="second5Text">
                     <h4>Surgeries</h4>
                     <p>Expert surgical care</p>
                 </div></a>
@@ -110,7 +110,7 @@
                             <ul>
                                <a href="#"><li id="newtext">Practo Prime <span id="new">New</span></li></a> 
                                <a href="#"> <li>Software for providers</li></a>
-                               <a href="/docter_profile"><li>List your practice for Free</li></a> 
+                               <a href=" {% static '/docter_profile' %} "><li>List your practice for Free</li></a> 
                                <a href="#"><li>Corporate wellness</li></a> 
                             </ul>
                         </div>
@@ -128,7 +128,7 @@
             </div>
             <div class="NavFourSection">
                 <div class="loginSignUp" id="loginbutton">
-                    <a href="/login"><Button>Login / SignUp</Button></a>
+                    <a href=" {% static '/login' %} "><Button>Login / SignUp</Button></a>
                 </div>
                 <div class="userprofile" id="userprofileshow">
                         <div class="username" onclick="shareprofile()">
@@ -137,7 +137,7 @@
                         <div class="userdata ">
                             <div class="userimgandtext">
                                 <div class="userdemoimg">
-                                    <img src="./Home Page Images/Man_Silhouette2.jpg" alt="">
+                                    <img src=" {% static 'Home Page Images/Man_Silhouette2.jpg' %} " alt="">
                                 </div>
                                 <div class="usernamenum">
                                     <p id="usernameinside"></p>
@@ -145,7 +145,7 @@
                                 </div>
                             </div>
                             <div class="usergptocartpage">
-                                <a href="/labtest"><p>Buy Product</p></a>
+                                <a href=" {% static '/labtest' %} "><p>Buy Product</p></a>
                             </div>
                             <div class="usergptocartpage userlogout" onclick="logout()">
                                 <h5>Log Out</h5>
@@ -201,23 +201,23 @@
                 </div>
                 </div>
                 <div class="adimg">
-                    <img src="./Home Page Images/Second section/plus-tag.png">
+                    <img src=" {% static 'Home Page Images/Second section/plus-tag.png' %} ">
                 </div>
             </div>
             <!-- Second part of html end here -->
 
             <!-- third part of start here -->
             <div id="HomethirdSection">
-                <img src="./Home Page Images/Third Section/model/mobile_banner.webp" alt="">
+                <img src=" {% static 'Home Page Images/Third Section/model/mobile_banner.webp' %} " alt="">
                 <div class="thirdlinerback">
                     <div class="leftsidecontect" onclick="Gotosurgi()">
-                        <img src="./Home Page Images/Third Section/logo.webp">
+                        <img src=" {% static 'Home Page Images/Third Section/logo.webp' %} ">
                         <h3>Choose the experts in end to end surgical care.</h3>
                         <h1>You are in safe hands</h1>
                         <Button>Know more</Button>
                     </div>
                     <div class="rightsideimg">
-                        <img src="./Home Page Images/Third Section/right.webp">
+                        <img src=" {% static 'Home Page Images/Third Section/right.webp' %} ">
                     </div>
                 </div>
             </div>
@@ -229,17 +229,17 @@
                         <h3>Our Offerings</h3>
                     </div>
                     <div class="resfouimgdiv1section">
-                        <div class="resfouimgdiv1"> <img src="./HomeCss/respoviesimg/main third section/card1.webp" alt="">
+                        <div class="resfouimgdiv1"> <img src=" {% static 'HomeCss/respoviesimg/main third section/card1.webp' %} " alt="">
                         </div> 
-                        <div class="resfouimgdiv1"> <img src="./HomeCss/respoviesimg/main third section/card2.webp" alt="">
+                        <div class="resfouimgdiv1"> <img src=" {% static 'HomeCss/respoviesimg/main third section/card2.webp' %} " alt="">
                         </div> 
                     </div>
                     <div class="resfouimgdiv2section">
-                        <div class="resfouimgdiv1"> <img src="./HomeCss/respoviesimg/main third section/card3.webp" alt="">
+                        <div class="resfouimgdiv1"> <img src=" {% static 'HomeCss/respoviesimg/main third section/card3.webp' %} " alt="">
                         </div> 
-                        <div class="resfouimgdiv1"> <img src="./HomeCss/respoviesimg/main third section/card4.webp" alt="">
+                        <div class="resfouimgdiv1"> <img src=" {% static 'HomeCss/respoviesimg/main third section/card4.webp' %} " alt="">
                         </div>
-                        <div class="resfouimgdiv1"> <img src="./HomeCss/respoviesimg/main third section/card5.webp" alt="">
+                        <div class="resfouimgdiv1"> <img src=" {% static 'HomeCss/respoviesimg/main third section/card5.webp' %} " alt="">
                         </div>
                     </div>
             </div>
@@ -250,7 +250,7 @@
                     <div class="FourAllCard">
                         <div class="Card1 card">
                             <div class="cardimg">
-                                <img src="./Home Page Images/Four Section/card1.webp">
+                                <img src=" {% static 'Home Page Images/Four Section/card1.webp' %} ">
                             </div>
                             <div class="cardText">
                                 <h3>Instant Video Consultation</h3>
@@ -259,7 +259,7 @@
                         </div>
                         <div class="Card2 card">
                             <div class="cardimg">
-                                <img src="./Home Page Images/Four Section/card2.webp">
+                                <img src=" {% static 'Home Page Images/Four Section/card2.webp' %} ">
                             </div>
                             <div class="cardText">
                                 <h3>Find Doctors Near You</h3>
@@ -268,7 +268,7 @@
                         </div>
                         <div class="Card3 card">
                             <div class="cardimg">
-                                <img src="./Home Page Images/Four Section/card3.webp">
+                                <img src=" {% static 'Home Page Images/Four Section/card3.webp' %} ">
                             </div>
                             <div class="cardText">
                                 <h3>Medicines</h3>
@@ -277,7 +277,7 @@
                         </div>
                         <div class="Card1 card">
                             <div class="cardimg">
-                                <img src="./Home Page Images/Four Section/card4.png">
+                                <img src=" {% static 'Home Page Images/Four Section/card4.png' %} ">
                             </div>
                             <div class="cardText">
                                 <h3>Lab Tests</h3>
@@ -286,7 +286,7 @@
                         </div>
                         <div class="Card1 card">
                             <div class="cardimg">
-                                <img src="./Home Page Images/Four Section/card5.webp">
+                                <img src=" {% static 'Home Page Images/Four Section/card5.webp' %} ">
                             </div>
                             <div class="cardText">
                                 <h3>Surgeries</h3>
@@ -308,37 +308,37 @@
                         <h3>Private online consultations with verified doctors in all specialists</h3>
                     </div>
                     <div class="leftbtn">
-                       <a href="/video_consult"><button>View All Specialities</button></a> 
+                       <a href=" {% static '/video_consult' %} "><button>View All Specialities</button></a> 
                     </div>
                 </div>
                 <div class="allIcon" >
                     <div class="icon1 icon">
-                        <div class="iconimg"><img src="./Home Page Images/Five Section/icon1.webp"></div>
+                        <div class="iconimg"><img src=" {% static 'Home Page Images/Five Section/icon1.webp' %} "></div>
                         <h3>Period doubts or Pregnancy </h3>
                         <h4>CONSULT NOW</h4>
                     </div>
                     <div class="icon1 icon">
-                        <div class="iconimg"><img src="./Home Page Images/Five Section/icon2.webp"></div>
+                        <div class="iconimg"><img src=" {% static 'Home Page Images/Five Section/icon2.webp' %} "></div>
                         <h3>Acne, pimple or skin issues </h3>
                         <h4>CONSULT NOW</h4>
                     </div>
                     <div class="icon1 icon">
-                        <div class="iconimg"><img src="./Home Page Images/Five Section/icon3.svg"></div>
+                        <div class="iconimg"><img src=" {% static 'Home Page Images/Five Section/icon3.svg' %} "></div>
                         <h3>Performance issues in bed </h3>
                         <h4>CONSULT NOW</h4>
                     </div>
                     <div class="icon1 icon">
-                        <div class="iconimg"><img src="./Home Page Images/Five Section/icon4.webp"></div>
+                        <div class="iconimg"><img src=" {% static 'Home Page Images/Five Section/icon4.webp' %} "></div>
                         <h3>Cold, cough or fever</h3>
                         <h4>CONSULT NOW</h4>
                     </div>
                     <div class="icon1 icon">
-                        <div class="iconimg"><img src="./Home Page Images/Five Section/icon5.svg"></div>
+                        <div class="iconimg"><img src=" {% static 'Home Page Images/Five Section/icon5.svg' %} "></div>
                         <h3>Child not feeling well</h3>
                         <h4>CONSULT NOW</h4>
                     </div>
                     <div class="icon1 icon">
-                        <div class="iconimg"><img src="./Home Page Images/Five Section/icon6.webp"></div>
+                        <div class="iconimg"><img src=" {% static 'Home Page Images/Five Section/icon6.webp' %} "></div>
                         <h3>Depression or anxiety</h3>
                         <h4>CONSULT NOW</h4>
                     </div>
@@ -355,7 +355,7 @@
                 <div class="cardSilder responsive">
                     <div class="cardslider1">
                         <div class="card1 slidercard">
-                            <img src="./Home Page Images/SIx section silder/card1.jpg">
+                            <img src=" {% static 'Home Page Images/SIx section silder/card1.jpg' %} ">
                             <h3>Dentist
                                 <h3>
                                     <h4>Teething troubles? Schedule a dental checkup</h4>
@@ -363,7 +363,7 @@
                     </div>
                     <div class="cardslider2">
                         <div class="card1 slidercard">
-                            <img src="./Home Page Images/SIx section silder/card2.jpg">
+                            <img src=" {% static 'Home Page Images/SIx section silder/card2.jpg' %} ">
                             <h3>Gynecologist/Obstetrician
                                 <h3>
                                     <h4>Explore for women’s health, pregnancy and infertility treatments</h4>
@@ -371,7 +371,7 @@
                     </div>
                     <div class="cardslider3">
                         <div class="card1 slidercard">
-                            <img src="./Home Page Images/SIx section silder/card3.jpg">
+                            <img src=" {% static 'Home Page Images/SIx section silder/card3.jpg' %} ">
                             <h3>Dietitian/Nutrition
                                 <h3>
                                     <h4>Get guidance on eating right, weight management and sports nutrition</h4>
@@ -379,7 +379,7 @@
                     </div>
                     <div class="cardslider4">
                         <div class="card1 slidercard">
-                            <img src="./Home Page Images/SIx section silder/card4.jpg">
+                            <img src=" {% static 'Home Page Images/SIx section silder/card4.jpg' %} ">
                             <h3>Physiotherapist
                                 <h3>
                                     <h4>Pulled a muscle? Get it treated by a trained physiotherapist</h4>
@@ -387,7 +387,7 @@
                     </div>
                     <div class="cardslider5">
                         <div class="card1 slidercard">
-                            <img src="./Home Page Images/SIx section silder/card5.jpg">
+                            <img src=" {% static 'Home Page Images/SIx section silder/card5.jpg' %} ">
                             <h3>General surgeon
                                 <h3>
                                     <h4>Need to get operated? Find the right surgeon</h4>
@@ -395,7 +395,7 @@
                     </div>
                     <div class="cardslider6">
                         <div class="card1 slidercard">
-                            <img src="./Home Page Images/SIx section silder/card6.jpg">
+                            <img src=" {% static 'Home Page Images/SIx section silder/card6.jpg' %} ">
                             <h3>Orthopedist
                                 <h3>
                                     <h4>For Bone and Joints issues, spinal injuries and more</h4>
@@ -403,7 +403,7 @@
                     </div>
                     <div class="cardslider7">
                         <div class="card1 slidercard">
-                            <img src="./Home Page Images/SIx section silder/card7.jpg">
+                            <img src=" {% static 'Home Page Images/SIx section silder/card7.jpg' %} ">
                             <h3>General physician
                                 <h3>
                                     <h4>Find the right family doctor in your neighborhood</h4>
@@ -411,7 +411,7 @@
                     </div>
                     <div class="cardslider8">
                         <div class="card1 slidercard">
-                            <img src="./Home Page Images/SIx section silder/card8.jpg">
+                            <img src=" {% static 'Home Page Images/SIx section silder/card8.jpg' %} ">
                             <h3>Pediatrician
                                 <h3>
                                     <h4>Child Specialists and Doctors for Infant</h4>
@@ -429,25 +429,25 @@
             <!-- Seven part are end here  -->
             <div id="HomeSevenSection">
                 <div class="sevenrespoive"><h2>Introducing Practo PLUS</h2>
-                <a href=""><div class="sevenrespoiveimg"><img src="./Home Page Images/Seven Section/respovies.webp" alt=""></a></div>
+                <a href=" {% static '' %} "><div class="sevenrespoiveimg"><img src=" {% static 'Home Page Images/Seven Section/respovies.webp' %} " alt=""></a></div>
             </div> 
                 <div class="SevenAllContent">
                     <div class="Seven1Section">
                         <div class="Seven1SectionContent">
                             <h3>Read top articles from health experts</h3>
                             <h4>Health articles that keep you informed about good health practices and achieve your goals.</h4>
-                           <a href="/surgeries"><button>See all articles</button></a> 
+                           <a href=" {% static '/surgeries' %} "><button>See all articles</button></a> 
                         </div>
                     </div>
                     <div class="Seven2Section">
                         <div class="SCard1 card">
-                            <div class="sevenimg"> <img src="./Home Page Images/Seven Section/firstimg.jfif"></div>
+                            <div class="sevenimg"> <img src=" {% static 'Home Page Images/Seven Section/firstimg.jfif' %} "></div>
                             <h3>Coronavirus</h3>
                             <h4>12 Coronavirus Myths and Facts That You Should Be Aware Of</h4>
                             <p>Dr. Diana Borgio</p>
                         </div>
                         <div class="SCard2 card">
-                            <div class="sevenimg"><img class="sevenimg" src="./Home Page Images/Seven Section/second2.jfif"> </div>
+                            <div class="sevenimg"><img class="sevenimg" src=" {% static 'Home Page Images/Seven Section/second2.jfif' %} "> </div>
                             <h3>Vitamins and Supplements</h3>
                             <h4>Eating Right to Build Immunity Against Cold and Viral Infections</h4>
                             <p>Dr. Diana Borgio</p>
@@ -492,7 +492,7 @@
 <div id="HomeNineSection">
     <div class="NineMainDiv">
         <div class="NineleftDiv">
-            <div class="leftimg"><img src="./Home Page Images/NIne Section/footer-img.png" ></div>
+            <div class="leftimg"><img src=" {% static 'Home Page Images/NIne Section/footer-img.png' %} " ></div>
         </div>
         <div class="NineRightDiv">
             <h1>Download the Practo app</h1>
@@ -509,8 +509,8 @@
                 </div>
                 <div class="NineIcon">
                     <a href="https://play.google.com/store/apps/details?id=com.practo.fabric&referrer=af_tranid%3DaaBb8Z5Bqbn3TZkbxcrD0A%26pid%3Dweb%26c%3Dhomepage%26af_web_id%3Dd89d6c46-37c1-434d-8516-92f4aa72dbbb-c">
-                    <img src="./Home Page Images/NIne Section/google_play.webp" alt=""></a>
-                  <a href=""> <img src="./Home Page Images/NIne Section/apple_store.webp"></a>
+                    <img src=" {% static 'Home Page Images/NIne Section/google_play.webp' %} " alt=""></a>
+                  <a href=" {% static '' %} "> <img src=" {% static 'Home Page Images/NIne Section/apple_store.webp' %} "></a>
                 </div>
             </div>
         </div>
@@ -524,42 +524,42 @@
             <div class="footers1t">
                 <h2>Procto</h2>
                 <ul>
-                    <a href="/aboutus"><li>About</li></a>
-                    <a href="/contact_us"> <li>Contact Us</li></a>
+                    <a href=" {% static '/aboutus' %} "><li>About</li></a>
+                    <a href=" {% static '/contact_us' %} "> <li>Contact Us</li></a>
                     <a href="#"><li>Careers</li></a>
-                   <a href="/labtest"><li>Product</li></a> 
+                   <a href=" {% static '/labtest' %} "><li>Product</li></a> 
                 </ul>
             </div>
             <div class="footers1t">
                 <h2>For patients</h2>
                 <ul>
-                    <a href="find_docter"><li>For Docter</li></a>
-                    <a href="/labtest"> <li>Lab Tests</li></a>
-                    <a href="/docter_profile"><li>Search For Docter</li></a>
-                   <a href="/labtest"><li>Product Plus</li></a> 
-                   <a href="/labtest"><li>By New Product</li></a>
+                    <a href=" {% static 'find_docter' %} "><li>For Docter</li></a>
+                    <a href=" {% static '/labtest' %} "> <li>Lab Tests</li></a>
+                    <a href=" {% static '/docter_profile' %} "><li>Search For Docter</li></a>
+                   <a href=" {% static '/labtest' %} "><li>Product Plus</li></a> 
+                   <a href=" {% static '/labtest' %} "><li>By New Product</li></a>
                 </ul>
             </div>
             <div class="footers1t">
                 <h2>For Docter</h2>
                 <ul>
-                    <a href="find_docter"><li>Docter</li></a>
-                    <a href="/labtest"> <li>Cart page</li></a>
-                    <a href="../Medicines/Medicine.html"><li>Medicines</li></a>
-                   <a href="/labtest"><li>Product</li></a> 
+                    <a href=" {% static 'find_docter' %} "><li>Docter</li></a>
+                    <a href=" {% static '/labtest' %} "> <li>Cart page</li></a>
+                    <a href=" {% static '.Medicines/Medicine.html' %} "><li>Medicines</li></a>
+                   <a href=" {% static '/labtest' %} "><li>Product</li></a> 
                 </ul>
             </div>
             <div class="footers1t">
                 <h2>For Hospitals</h2>
                 <ul>
                     <a href="#"><li>Instant</li></a>
-                    <a href="/aboutus"> <li>Parcto Profile</li></a>
+                    <a href=" {% static '/aboutus' %} "> <li>Parcto Profile</li></a>
                 </ul>
             </div>
             <div class="footers1t">
                 <h2>More</h2>
                 <ul>
-                    <a href="/contact_us"><li>Help</li></a>
+                    <a href=" {% static '/contact_us' %} "><li>Help</li></a>
                     <a href="#"> <li>Developer</li></a>
                     <a href="#"><li>Privacy Policy</li></a>
                    <a href="#"><li>Terms & Conditions</li></a> 
@@ -578,7 +578,7 @@
     </div>
     <div class="footer2sectio">
         <div class="footer2sectionimg">
-            <img src="./Home Page Images/footerimg/white_practo_logo.svg" alt="">
+            <img src=" {% static 'Home Page Images/footerimg/white_practo_logo.svg' %} " alt="">
         </div>
         <div class="footer2sectiontextcopy">
             <h3>Copyright © 2017. All rights reserved.</h3>
@@ -656,14 +656,14 @@
             <div class="responsive2sectioncadsdiv">
                 <div class="responsive2rightcard responsive2cards">
                     <div class="responsive2imgdivlogo">
-                        <img src="./HomeCss/respoviesimg/secondsection/practo-plus-logo.svg" alt="">
+                        <img src=" {% static 'HomeCss/respoviesimg/secondsection/practo-plus-logo.svg' %} " alt="">
                         <i class="fas fa-chevron-right"></i>
                     </div>
                     <div class="responsive2headingtext">
                         <h5>24x7 Health Companion</h5>
                     </div>
                     <div class="responsive2imgbottomdiv">
-                        <img src="./HomeCss/respoviesimg/secondsection/card1.webp" alt="">
+                        <img src=" {% static 'HomeCss/respoviesimg/secondsection/card1.webp' %} " alt="">
                     </div>
                 </div>
 
@@ -676,7 +676,7 @@
                         <h5>Get ₹200 HealthCash</h5>
                     </div>
                     <div class="responsive2imgbottomdiv responsive2imgbottomdiv2">
-                        <img src="./HomeCss/respoviesimg/secondsection/card2.webp" alt="">
+                        <img src=" {% static 'HomeCss/respoviesimg/secondsection/card2.webp' %} " alt="">
                     </div>
                 </div>
             </div>
@@ -690,7 +690,7 @@
                 <div class="responsive3Sectioncard1 responsive3Sectioncard">
                     <a href="#">
                         <div class="responsive3Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/thirdsection/card1.jfif" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/thirdsection/card1.jfif' %} " alt="">
                         </div>
                         <div class="responsive3Sectioncardmoddeltext">
                             <h6>Motherhood <br> Hospital</h6>
@@ -704,7 +704,7 @@
                 <div class="responsive3Sectioncard1 responsive3Sectioncard">
                     <a href="#">
                         <div class="responsive3Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/thirdsection/card2.png" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/thirdsection/card2.png' %} " alt="">
                         </div>
                         <div class="responsive3Sectioncardmoddeltext">
                             <h6>Motherhood <br> Hospital</h6>
@@ -718,7 +718,7 @@
                 <div class="responsive3Sectioncard1 responsive3Sectioncard">
                     <a href="#">
                         <div class="responsive3Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/thirdsection/card3.png" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/thirdsection/card3.png' %} " alt="">
                         </div>
                         <div class="responsive3Sectioncardmoddeltext">
                             <h6>Motherhood <br> Hospital</h6>
@@ -733,7 +733,7 @@
                 <div class="responsive3Sectioncard1 responsive3Sectioncard">
                     <a href="#">
                         <div class="responsive3Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/thirdsection/card2.png" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/thirdsection/card2.png' %} " alt="">
                         </div>
                         <div class="responsive3Sectioncardmoddeltext">
                             <h6>Motherhood <br> Hospital</h6>
@@ -747,7 +747,7 @@
                 <div class="responsive3Sectioncard1 responsive3Sectioncard">
                     <a href="#">
                         <div class="responsive3Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/thirdsection/card2.png" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/thirdsection/card2.png' %} " alt="">
                         </div>
                         <div class="responsive3Sectioncardmoddeltext">
                             <h6>Motherhood <br> Hospital</h6>
@@ -824,7 +824,7 @@
                 <div class="responsive5Sectioncard1 responsive5Sectioncard">
                     <a href="#">
                         <div class="responsive5Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/five section/card.webp" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/five section/card.webp' %} " alt="">
                         </div>
                         <div class="res5headingte">
                             <h3>Comprehensive Young Indian Health Checkup</h3>
@@ -841,7 +841,7 @@
                 <div class="responsive5Sectioncard1 responsive5Sectioncard">
                     <a href="#">
                         <div class="responsive5Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/five section/card2.webp" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/five section/card2.webp' %} " alt="">
                         </div>
                         <div class="res5headingte">
                             <h3>Active Professional Health Checkup</h3>
@@ -858,7 +858,7 @@
                 <div class="responsive5Sectioncard1 responsive5Sectioncard">
                     <a href="#">
                         <div class="responsive5Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/five section/card3.webp" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/five section/card3.webp' %} " alt="">
                         </div>
                         <div class="res5headingte">
                             <h3>Active Professional Health Checkup</h3>
@@ -876,7 +876,7 @@
                 <div class="responsive5Sectioncard1 responsive5Sectioncard">
                     <a href="#">
                         <div class="responsive5Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/five section/card4.webp" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/five section/card4.webp' %} " alt="">
                         </div>
                         <div class="res5headingte">
                             <h3>Active Professional Health Checkup</h3>
@@ -893,7 +893,7 @@
                 <div class="responsive5Sectioncard1 responsive5Sectioncard">
                     <a href="#">
                         <div class="responsive5Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/five section/card5.webp" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/five section/card5.webp' %} " alt="">
                         </div>
                         <div class="res5headingte">
                             <h3>Active Professional Health Checkup</h3>
@@ -923,7 +923,7 @@
                 <div class="responsive6Sectioncard1 responsive6Sectioncard">
                     <a href="#">
                         <div class="responsive6Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/six section/card1.png" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/six section/card1.png' %} " alt="">
                         </div>
                         <div class="res6headingte">
                             <h3>Hairloss, pimples or skin issues?</h3>
@@ -936,7 +936,7 @@
                 <div class="responsive6Sectioncard1 responsive6Sectioncard">
                     <a href="#">
                         <div class="responsive6Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/six section/card2.webp" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/six section/card2.webp' %} " alt="">
                         </div>
                         <div class="res6headingte">
                             <h3>Irregular periods or pregnancy doubts?</h3>
@@ -949,7 +949,7 @@
                 <div class="responsive6Sectioncard1 responsive6Sectioncard">
                     <a href="#">
                         <div class="responsive6Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/six section/card3.webp" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/six section/card3.webp' %} " alt="">
                         </div>
                         <div class="res6headingte">
                             <h3>Comprehensive Young Indian Health Checkup</h3>
@@ -962,7 +962,7 @@
                 <div class="responsive6Sectioncard1 responsive6Sectioncard">
                     <a href="#">
                         <div class="responsive6Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/six section/card4.webp" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/six section/card4.webp' %} " alt="">
                         </div>
                         <div class="res6headingte">
                             <h3>Comprehensive Young Indian Health Checkup</h3>
@@ -975,7 +975,7 @@
                 <div class="responsive6Sectioncard1 responsive6Sectioncard">
                     <a href="#">
                         <div class="responsive6Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/six section/card5.webp" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/six section/card5.webp' %} " alt="">
                         </div>
                         <div class="res6headingte">
                             <h3>Comprehensive Young Indian Health Checkup</h3>
@@ -988,7 +988,7 @@
                 <div class="responsive6Sectioncard1 responsive6Sectioncard">
                     <a href="#">
                         <div class="responsive6Sectioncardtopimg">
-                            <img src="./HomeCss/respoviesimg/six section/card6.webp" alt="">
+                            <img src=" {% static 'HomeCss/respoviesimg/six section/card6.webp' %} " alt="">
                         </div>
                         <div class="res6headingte">
                             <h3>Comprehensive Young Indian Health Checkup</h3>
@@ -1005,12 +1005,12 @@
 
     <div id="respovies7footersection">
             <div class="res7footerimgdiv">
-                <img src="./HomeCss/respoviesimg/sevenfooter1/app-download-banner.svg" alt="">
+                <img src=" {% static 'HomeCss/respoviesimg/sevenfooter1/app-download-banner.svg' %} " alt="">
             </div>
             <div class="res7sediv">
                 <div class="res7defirstdiv">
                     <div class="res7plogoimgdiv">
-                        <img src="./HomeCss/respoviesimg/sevenfooter1/proctoimg.png" alt="">
+                        <img src=" {% static 'HomeCss/respoviesimg/sevenfooter1/proctoimg.png' %} " alt="">
                     </div>
                     <div class="res7setextdiv">
                         <h6>Download the Practo app</h6>
@@ -1034,25 +1034,25 @@
 
         <button type="button" class="collapsible">Practo</button>
         <div class="content">
-                <a href="/aboutus">About</a>
+                <a href=" {% static '/aboutus' %} ">About</a>
                 <a href="#">Blog</a>
                 <a href="#">Careers</a>
                 <a href="#">Press</a>
-                <a href="/contact_us">Contact Us</a> 
+                <a href=" {% static '/contact_us' %} ">Contact Us</a> 
         </div>
         <button type="button" class="collapsible">For Patients</button>
         <div class="content">
-            <a href="find_docter">Serach For Clinics</a>
-            <a href="find_docter">Serach for hospital</a>
-            <a href="../Medicines/Medicine.html">Serach for doctor</a>
+            <a href=" {% static 'find_docter' %} ">Serach For Clinics</a>
+            <a href=" {% static 'find_docter' %} ">Serach for hospital</a>
+            <a href=" {% static '.Medicines/Medicine.html' %} ">Serach for doctor</a>
             <a href="#">Press</a>
-            <a href="/contact_us">Contact Us</a>
+            <a href=" {% static '/contact_us' %} ">Contact Us</a>
         </div>
         <button type="button" class="collapsible">For Doctors</button>
         <div class="content">
-            <a href="find_docter">Practo Consult</a>
-            <a href="find_docter">Practo Health Feed</a>
-            <a href="find_docter">Practo profile</a>
+            <a href=" {% static 'find_docter' %} ">Practo Consult</a>
+            <a href=" {% static 'find_docter' %} ">Practo Health Feed</a>
+            <a href=" {% static 'find_docter' %} ">Practo profile</a>
         </div>
         <button type="button" class="collapsible">For Clinics</button>
         <div class="content">
@@ -1080,7 +1080,7 @@
 
     <div id="responsive9footer3section">
         <div class="res9fo3s">
-            <img src="./Home Page Images/practonav logo/practo.svg" alt="">
+            <img src=" {% static 'Home Page Images/practonav logo/practo.svg' %} " alt="">
         </div>
         <div class="res9fo3stext">
             <p>Copyright © 2017, Practo. All rights reserved.</p>
@@ -1091,11 +1091,11 @@
 
 
 
-        <script src="{% static 'home/js/jquery-3.6.0.min.js' %}"></script>
-        <script src="{% static 'home/js/slick.min.js' %}"></script>
-        <script src="{% static 'home/js/silder1.js' %}"></script>
-        <script src="{% static 'home/js/Home.js' %}"></script>
-        <script src="{% static 'home/js/serch.js' %}"></script>
+        <script src=" {% static 'home/js/jquery-3.6.0.min.js' %} "></script>
+        <script src=" {% static 'home/js/slick.min.js' %} "></script>
+        <script src=" {% static 'home/js/silder1.js' %} "></script>
+        <script src=" {% static 'home/js/Home.js' %} "></script>
+        <script src=" {% static 'home/js/serch.js' %} "></script>
 </body>
 
 </html>
